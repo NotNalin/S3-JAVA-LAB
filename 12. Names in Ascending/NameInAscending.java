@@ -7,17 +7,18 @@ class NameInAscending
         System.out.println("Enter Number of Names : ");
         int n = sc.nextInt();
         String s[] = new String[100];
+        sc.nextLine();
         System.out.println("Enter Names : ");
-        for(int i=0;i<=n;i++)
+        for(int i=0;i<n;i++)
         	s[i] = sc.nextLine();
         
         System.out.println("Given Array of Names");
-        for(int i=0;i<=n;i++)
+        for(int i=0;i<n;i++)
         	System.out.println(s[i]);
 
-        for(int i=0;i<=n-1;i++)
+        for(int i=0;i<n-1;i++)
         {
-            for(int j=0;j<=n-1-i;j++)
+            for(int j=0;j<n-1-i;j++)
             {
             	if(s[j].compareTo(s[j+1])>0)
             	{
@@ -28,7 +29,7 @@ class NameInAscending
             }
         }
         System.out.println("Names in ascending : ");
-        for(int i=0;i<=n;i++)
+        for(int i=0;i<n;i++)
         	System.out.println(s[i]);
     }
 }
